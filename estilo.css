@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap'); 
+
+body { 
+	  background-color: #f6f5f5;
+	  margin-right: 0px;
+	  padding: 0px;
+}
+
+.html {
+	font-size: 62.5%;
+}
+
+
+/*.........../navbar/..........*
+/* deskyop mode...........///*/
+
+
+.navbar input[type="checkbox"],
+.navbar  .hamburger-lines  {
+	display: none;
+	
+} 
+
+.navbar {
+	box-shadow: 0px 5px 10px 0px #aaa;
+	position: fixed;
+	width: 99%;
+	background: #fff;
+	color: #000;
+	opacity: 0.85;
+	height: 50px;
+	z-index: 12;
+	border-radius: 10px;
+
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	height: 64px;
+	align-items: center;
+}
+
+.menu-items {
+	/* ORDER é responsavel por trocar a ordem dos itens no menu */
+	order:2;
+	display: flex;
+}
+
+.menu-items li {
+	/* retira os pontos ao lado de cada palavra */
+	list-style: none;
+	/* separa as palavras do item */
+	margin-left: 1.9rem;
+	margin-right: 0.5rem;
+	/* coloca as palavras na distancia certa dentro do container */
+	margin-bottom: 0.7rem;
+	/* tamanho da fonte */
+	font-size: 1.2rem;
+}
+
+.menu-items a {
+	/* retira as linhas abaixo do texto */
+	text-decoration: none;
+	color: #444;
+	font-weight: 500;
+	transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+	color: #117964;
+	transition: color 0.3s ease-in-out;
+}
+.logo {
+	order: 1;
+	font-size: 2.3rem;
+	margin-bottom: 1em;
+	margin-left: 0.5em;
+	font-family: 'Nerko One', cursive;
+}
+
+/* nao coloquei uma classe, nem uma div de propósito pois a imagem e o texto espalhado na tela ficou com um design legal e simples ainda entrega a informaçao mais clara e uma tela mais limpa */
+section
+{
+	width: 100%;
+	height: 95vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+} 
+
+/* Estilo Textos  ( BEM VINDOS )*/
+.conteudo-texto p:nth-child(1)
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	color: #6d6d6d;
+	font-size: 22px;
+
+}
+ /* Estilo Textos (EU SOU RODRIGO) */
+.conteudo-texto p:nth-child(2)
+{
+	font-family: calibri;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #000;
+	font-size: 60px;
+}
+/* Estilo Textos ( DESENVOLVEDOR FULL...) */
+.conteudo-texto p:nth-child(3)
+{
+	font-family: myriad pro regular;
+	color: #403e3e;
+	font-size: 30px;
+	line-height: 30px;
+}
+/* Estilo Textos NA TELA */
+.conteudo-texto 
+{
+	line-height: 0px;
+	margin: 45px 0px 25px;
+}
+/* informação tentei agrupar o código abaixo com esse aqui de cima, por ser da mesma classe não deu certo, os botões ficaram desconfigurados */
+.conteudo-texto 
+{
+	position: absolute;
+	left: 13%;
+	top: 42%;
+	transform: translate(-13%, -42%);
+}
+
+.conteudo-texto button
+{
+	width: 130px;
+	height: 42px;
+	border-radius: 10px;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 14px;
+	outline: none;
+	margin: 0px 10px;
+}
+/* botão  ( saiba mais ) */ 
+.btn1
+{
+	border: 2px solid #373636;
+	color: #373636;
+
+}
+/* botão ( dowmload CV )*/
+.btn2
+{
+	background-color: #0b0b0b;
+	border: none;
+	color: #ffffff;;
+
+}
+
+button:active
+{
+	transform: scale(1.1);
+
+}
+
+ /* Estilo Imagem sem fundo */
+
+.imgbg
+{
+	height: 370px;
+	position: absolute;
+	bottom: 40px;
+	padding: auto;
+	left: 77%;
+	transform: translateX(-70%);
+
+}
+
+/* conteudo que fala sobre mim e familia, junto com minha foto */
+
+.conteudo-sobre
+{
+	width: 85%;
+	height:340px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: -7% auto 20px auto;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+/* Estilo Imagem Sobre eu */
+.conteudo-sobre img
+{
+	height: 250px;
+	position: absolute;
+	bottom: 40px;
+	padding: auto;
+	left: 90%;
+	transform: translateX(-70%);
+	border-radius: 5px;
+
+  
+}
+
+.texto-sobre 
+{
+	width: 550px;
+	padding-right: 450px;
+}
+
+.texto-sobre  p:nth-child(1)
+{
+	color: #403e3e;
+	font-family: 'Solway', serif;
+	font-weight: bold;
+	font-size: 23px;
+	line-height: 0px;
+
+}
+
+.texto-sobre  p:nth-child(2)
+{
+	color: #3e3e3e;
+	font-size: 13px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	line-height: 12px;
+}
+
+.texto-sobre p:nth-child(3)
+{
+	color: #090000;
+	font-family: calibri;
+	font-size: 20px;
+}
+
+.texto-sobre button
+{    
+	width: 120px;
+	height: 40px;
+	color: #ffffff;
+	outline: none;
+	border-radius: 10px;
+	font-family: calibri;
+	background-color: #262525;
+}
+
+
+/* Sobre skills */
+.skills {
+	width: 85%;
+	padding-top: 2px;
+	height:265px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: 4% auto 20px auto;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.skill p:nth-child(1)
+{
+	font-family: calibri;
+	font-weight: 900;
+	color: #c50edd;
+	font-size:45px;
+	line-height: 0px;
+	padding: auto;
+}
+
+.skill p:nth-child(2)
+{
+	font-family: calibri;
+	font-weight: bold;
+	color: #3e3d3d;
+	font-size:30px;
+	line-height: 5px;
+
+}
+
+.skill p:nth-child(3)
+{
+	font-family: calibri;
+	color: #000;
+	font-size: 25px;
+	font-weight: 500;
+	
+}
+/* essa skill é a div que contem os 3 textos dentro da div CAIXA branca ( skiils ) */
+ .skill
+{
+	width: 600px;
+	margin: 50px 10px 10px 50px;
+	text-align: center;
+	
+}
+
+
+ /* as tres caixas  estao montadas por esse conjunto de codigos */
+
+.box1, .box2, .box3
+{
+	width: 300px;
+	height: 320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #ada7a7;
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	flex-direction: column;
+	margin-top: 70px;
+
+}
+
+.conteudo-box 
+{
+	display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+	
+}
+
+/* ESSE PARAGRAFO É A CLASSE  DETALHES */
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3)
+
+{
+	font-family:'Zen Dots', cursive;
+	text-align: center;
+	width: 250px;
+	color: #090000;
+	margin: 0px 0px 20px 0px;
+	font-size: 1.5rem;
+	
+}
+
+ /* Seção contatos */
+
+ .contato
+ {
+	 width: 100%;
+	 height: 100px;
+	 margin: 10px 10px 40px 10px;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+ }
+ 
+/* efeito hover do h2 */
+.hover-1 {
+	margin-top: 180px;
+	font-size: 40px;
+	font-family:'Zen Dots', cursive;
+	color:#166FE5;
+	font-weight: 100;
+	line-height: 5em;
+	transition: .3s;
+ }
+
+ .hover-1:hover {
+	text-shadow: 0 -1.2em #000,
+	0 0 #1095c1
+ }
+
+#link {
+	width: 85%;
+	height:140px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: -400px auto 20px auto;
+	position: relative;
+	justify-content:space-around;
+	align-items:center;
+}
+ 
+
+/* Seção footer */
+
+footer
+{
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+footer p
+{
+	font-family: calibri;
+}
+
+footer p:nth-child(1)
+{
+	font-weight: bold;
+	color: #191919;
+	line-height: 10px;
+	font-size: 30px;
+}
+
+footer p:nth-child(2)
+{
+	font-size: 16px;
+	color: #7e7d7d;
+	width: 500px;
+	text-align: center;
+}
+
+.copy
+{
+	color: #565555;
+	font-size: 13px;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+}
